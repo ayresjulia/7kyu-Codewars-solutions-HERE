@@ -1,2 +1,2 @@
-# 7kyu-Codewars-solutions-HERE
-7kyu Codewars solution
+# 7kyu Codewars solutions HERE!
+Please Follow and give a Star if you like the solutions :)
