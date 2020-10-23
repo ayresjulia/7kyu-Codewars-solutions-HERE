@@ -1,0 +1,21 @@
+/*In this kata you will create a function that takes a list of
+non-negative integers and strings and returns a new list
+with the strings filtered out.*/
+
+//solution 1
+function test(arr) {
+    let newArr = [];
+    for(let i=0; i<arr.length; i++){
+        if(arr[i] >= 0 && typeof arr[i] !== "string"){
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+}
+console.log(test([1,2,'4','b'])); // [1,2]
+
+//solution 2
+function filter_list(l) {
+    return l.filter(x => typeof x === "number");
+}
+console.log(test([1,2,'4','b'])); // [1,2]
