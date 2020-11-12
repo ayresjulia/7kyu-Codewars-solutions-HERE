@@ -1,0 +1,21 @@
+/* Given an array of positive integers (the weights of the people),
+return a new array/tuple of two integers, where the first one is the
+total weight of team 1, and the second one is the total weight of team 2. */
+
+function rowWeights(array) {
+
+    var oddIndex = [];
+    var evenIndex = [];
+    for (var i = 0; i < array.length; ++i) {
+        if (i % 2 === 0) {
+            oddIndex.push(array[i]);
+        } else {
+            evenIndex.push(array[i]);
+        }
+    }
+    return [oddIndex.reduce((a,b)=> a+b, 0),
+            evenIndex.reduce((a,b)=> a+b, 0)]
+}
+
+console.log(rowWeights([80])); // [80,0]
+console.log((rowWeights([39,84,74,18,59,72,35,61]))); // [207,235]
